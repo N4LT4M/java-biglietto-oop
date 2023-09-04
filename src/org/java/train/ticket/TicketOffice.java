@@ -23,8 +23,11 @@ Creare una classe Biglietteria, che contiene il metodo main in cui:
      */
 
         Scanner scanner = new Scanner(System.in);
-        int km =
-        Ticket ticket = new Ticket();
+        System.out.println("how many km you need to run?");
+        int km = scanner.nextInt();
+        System.out.println("how old are you?");
+        int passengerAge = scanner.nextInt();
+        Ticket ticket = new Ticket(km, passengerAge);
         System.out.println();
     }
 }
